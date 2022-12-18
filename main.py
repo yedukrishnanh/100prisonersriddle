@@ -1,7 +1,7 @@
 import random
 # for some reason python's normal division gives some strange results
 from decimal import Decimal
-release__chance=0
+release_chance=0
 # Number of times you want to experiment higher the better accuracy
 iterations=int(input("Number of Iterations(Anything above 100000 takes a long time):"))
 for x in range(iterations):
@@ -35,4 +35,4 @@ for x in range(iterations):
         release_chance = release_chance+1
 #calculate percentage and print
 per = (Decimal(release_chance)/Decimal(iterations))*100
-print(per,"% that everyone will be released")
+print(per," cases they were realsed")
